@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="MyWebPage.Shared.Pages.ScienceProjectsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyWebPage.Shared.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="Assets/Webpage Background.png"/>
+        </Grid.Background>
+
+        <Pivot Title="Science Projects (description only avaible in polish)">
+            <PivotItem Header="Analiza oddechu" Width="800">
+                <ScrollViewer>
+                    <Border HorizontalAlignment="Stretch"
+	                        BorderThickness="5"
+	                        BorderBrush="AntiqueWhite"
+	                        CornerRadius="10"
+	                        Padding="5">
+                        <StackPanel Margin="20">
+                            <TextBlock TextWrapping="Wrap"><Run>Pełna nazwa projekt: </Run><LineBreak></LineBreak><Bold>
+                                Zastosowanie dźwięku 3D oraz infromacji zwrotnej o stanie psychofizycznym człowieka na podstawie analizy sygnałow akustycznych</Bold><LineBreak></LineBreak></TextBlock>
+                            <TextBlock TextWrapping="Wrap" Text="Jako członek koła naukowego KNIA (Koło Naukowe Inżynierii Akustycznej brałem czynny udział w wyżekj wymienionym projekcie. Celem było stworzenie programu VR który modyfikuje zachowanie na podstawie analizy oddechu użytkownika. Algorytm analizy oddechy był napisany w Matlabie, 
+                                       wykorzystywał on VAD (ang. Voice Activity Detection) oraz MFCC (ang. Mel-frequency Cepstrum Coefficients) 
+                                       by oceniać czy mikrofon zarejestrował wdech czy wydech."/>
+                            <TextBlock TextWrapping="Wrap">
+                                <Run>Algorytm po wydaniu decyzji czy zarejestrowano wdech czy wydech analizował częstotliwość oddechu. Następnie wysyłał informacje o tym czy oddech jest regularny czy też nie do programu działajacego na Unreal Engine 4. Który to modyfikował swoje działanie na podstawie tych danych.</Run><LineBreak></LineBreak>
+                            <Run>Projekt wykorzystywał też zaawansowany silnik dźwięku 3D Steam Audio w celu badań nad wpływem zdarzeń akustycznych na stan psychofizyczny człowieka</Run></TextBlock>
+                            <TextBlock TextWrapping="Wrap"><LineBreak></LineBreak><Bold>OSKA 2019</Bold><LineBreak></LineBreak><Run>
+                                W dniack 7-9 marca 2019 w Kielcach odbyła się 6. Ogólnopolska Studencka Konferencja Akustyków OSKA 2019 podczas której 
+                                zaprezentowałem wraz z jednym ze współtworzących nasz projekt.</Run><LineBreak></LineBreak><Run> Link do wystąpiena: </Run>
+                                
+                                <Hyperlink NavigateUri="https://youtu.be/JuACjOMs3U4?t=19668">https://youtu.be/JuACjOMs3U4?t=19668</Hyperlink><LineBreak></LineBreak></TextBlock>
+                            <TextBlock TextWrapping="Wrap" Text="Kilka slajdów z prezentacji na OSKA 2019 (Ogólnopolska Studencka Konferencja Akustyków):"/>
+                            <Image Source="Assets/prezentacja1.png" Stretch="Uniform"/>
+                            <Image Source="Assets/prezentacja2.png" Stretch="Uniform"/>
+                            <Image Source="Assets/prezentacja3.png" Stretch="Uniform"/>
+                            <Image Source="Assets/prezentacja4.png" Stretch="Uniform"/>
+                            <TextBlock><LineBreak></LineBreak><LineBreak></LineBreak></TextBlock>
+                        </StackPanel>
+                    </Border>
+                </ScrollViewer>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>

@@ -1,0 +1,119 @@
+﻿<Page
+    x:Class="MyWebPage.Shared.Pages.MachineLearningPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyWebPage.Shared.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="White"/>
+        </Grid.Background>
+        <Pivot Title="Summary and description &#x0d;&#x0a;of my machine learning projects" >
+            <PivotItem Header="Stock Prediction" Width="800">
+                <ScrollViewer HorizontalScrollMode="Auto" VerticalScrollMode="Enabled">
+                    <Border HorizontalAlignment="Center"
+	                        BorderThickness="5"
+	                        BorderBrush="AntiqueWhite"
+	                        CornerRadius="10"
+	                        Padding="5">
+                        <StackPanel Margin="20">
+                            <TextBlock IsTextSelectionEnabled="True" TextWrapping="WrapWholeWords" 
+                                       Text="This poject is a simple stock prediction using SVR. I used 3 diffirent kernels to show how they diffrent from each other and to find the most accurate one."/>
+                            <Border HorizontalAlignment="Center"
+	                        BorderThickness="5"
+	                        BorderBrush="LightBlue"	                        
+	                        Padding="5">
+                                <Image Source="Assets/StockPPrediction_with_SVR.png" Stretch="Uniform"/>
+                            </Border>
+                            <TextBlock IsTextSelectionEnabled="True" TextWrapping="Wrap" Text="The graph shows that RBF kernel type is best for stock prediction. But if you want to know the next day prices non of these models is sufficiently accurate."/>
+                            <TextBlock IsTextSelectionEnabled="True" TextWrapping="WrapWholeWords" Text="Real stock price:186,29"/>
+                            <TextBlock IsTextSelectionEnabled="True" TextWrapping="WrapWholeWords" Text="RBF prediction:190.05127863516486"/>
+                            <TextBlock IsTextSelectionEnabled="True" TextWrapping="WrapWholeWords" Text="Linear Prediction: 183.03065217393822"/>
+                            <TextBlock IsTextSelectionEnabled="True" TextWrapping="WrapWholeWords" Text="Poly prediction: 181.01250000069973"/>
+                            <TextBlock TextWrapping="WrapWholeWords">
+                        <Span xml:space="preserve"><Run>Github link: </Run><Hyperlink NavigateUri="https://github.com/VGFP/Python/blob/master/Machine%20Learning/Machine_Learning/Stock_prediction.py">https://github.com/VGFP/Python/blob/master/Machine%20Learning/Machine_Learning/Stock_prediction.py</Hyperlink></Span>
+                            </TextBlock>
+                            <TextBlock TextWrapping="Wrap">
+                        <Span xml:space="preserve"><Run>SVR documentation: </Run><Hyperlink NavigateUri="https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html#sklearn.svm.SVR">https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVR.html#sklearn.svm.SVR</Hyperlink></Span>
+                            </TextBlock>
+                            <TextBlock Text=""/>
+                        </StackPanel>
+                    </Border>
+                </ScrollViewer>
+            </PivotItem>
+            <PivotItem Header="Recognizing handwritten digits" Width="800">
+                <ScrollViewer VerticalScrollMode="Enabled" HorizontalScrollMode="Enabled">
+                    <Border BorderBrush="AntiqueWhite"
+                            BorderThickness="5"
+		                    HorizontalAlignment="Center"
+                            CornerRadius="10"
+                            Padding="5">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Margin="20" Grid.ColumnSpan="2" Grid.Row="0">
+                                <TextBlock Text="This is a simple project to practise deep learning with keras API."/>
+                                <TextBlock Text="I created 2 models with diffirent optimizers and number of hidden layers."/>
+                                <TextBlock TextWrapping="Wrap" 
+                                           Text="Bouth models use the same MNIST database containing 60'000 examples for trainig and 10'000 for testing. 
+                                           All examples are correctly labled."/>
+                                <Border HorizontalAlignment="Stretch"
+	                                    BorderThickness="5"
+	                                    BorderBrush="LightBlue"	                        
+	                                    Padding="5">
+                                    <Image Source="Assets/Example-images-from-the-MNIST-dataset.png" Width="Auto" Height="Auto" Stretch="Uniform"/>
+                                </Border>
+                                <TextBlock Text=""/>
+                                <TextBlock TextWrapping="Wrap" Text="Both models are exported to ONNX format so they can be later use in some application."/>
+                                <TextBlock TextWrapping="Wrap" Text="ONNX model require 28x28 pixel image reshaped to 784 1D array as an input"/>
+                                <TextBlock Text=""/>
+                                <TextBlock Text="Comparison:" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                            <StackPanel Grid.Row="1" Grid.Column="0" Margin="10">
+                                <TextBlock Text="Model 1" HorizontalAlignment="Center"/>
+                                <TextBlock Text=""/>
+                                <TextBlock TextWrapping="Wrap" Text="This model has 1 input layer that has 784 neurons and 1 output layer with 10 neuron one for each digit"/>
+                                <TextBlock TextWrapping="Wrap"><Span>Test score: 0.2773858490049839</Span><LineBreak/><Run>Test accuracy: 0.9227</Run><LineBreak/>  Optimizer: SGD <LineBreak/>Filename: model1.onnx</TextBlock>
+                                <TextBlock TextWrapping="WrapWholeWords">
+                                <Span xml:space="preserve"><Run>File link: </Run><Hyperlink NavigateUri="https://github.com/VGFP/Python/blob/master/Machine%20Learning/Machine_Learning/model1.onnx">model1.onnx</Hyperlink></Span>
+                                </TextBlock>
+                            </StackPanel>
+                            <StackPanel Grid.Row="1" Grid.Column="1" Margin="10">
+                                <TextBlock Text="Model 2" HorizontalAlignment="Center"/>
+                                <TextBlock Text=""/>
+                                <TextBlock TextWrapping="Wrap" Text="This model has 1 input layer that has 784 neurons and 1 output layer with 10 neuron one for each digit and 2 hidden layers. Each hidden layer has relu activation function."/>
+                                <TextBlock TextWrapping="Wrap"><Span>Optimizer: Adam </Span><LineBreak/>Test score: 0.1014397737949681 <LineBreak/>Test accuracy: 0.9797 <LineBreak/>Filename: model2.onnx</TextBlock>
+                                <TextBlock TextWrapping="WrapWholeWords">
+                                <Span xml:space="preserve"><Run>File link: </Run><Hyperlink NavigateUri="https://github.com/VGFP/Python/blob/master/Machine%20Learning/Machine_Learning/model2.onnx">model2.onnx</Hyperlink></Span>
+                                </TextBlock>
+                            </StackPanel>
+                            <StackPanel Grid.Row="2" Grid.ColumnSpan="2">
+                                <TextBlock TextWrapping="Wrap"  Margin="20" Text="Model 2 is more acurate but it can be improved by optimizing: size of batch computation, number of internal hidden neurons, etc. or using diffren form of Neutral Network like CNN (convolutional neural network)."/>
+                                <TextBlock Text=""/>
+                                <TextBlock TextWrapping="WrapWholeWords">
+                        <Span xml:space="preserve"><Run>Github link: </Run><Hyperlink NavigateUri="https://github.com/VGFP/Python/blob/master/Machine%20Learning/Machine_Learning/Recognizing_Handwritten_Digits_with_Keras.py">Recognizing_Handwritten_Digits_with_Keras.py</Hyperlink></Span>
+                                </TextBlock>
+                                <TextBlock TextWrapping="WrapWholeWords">
+                                <Span xml:space="preserve"><Run>Keras Optimizers: </Run><Hyperlink NavigateUri="https://keras.io/optimizers/">https://keras.io/optimizers/</Hyperlink></Span>
+                                </TextBlock>
+                                <TextBlock>Code based on book <Italic>Deep Learning with Keras</Italic> by Antonio Gulli and Sujit Pal</TextBlock>
+                                <TextBlock Text=""/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </ScrollViewer>
+            </PivotItem>
+        </Pivot>
+    </Grid>
+</Page>

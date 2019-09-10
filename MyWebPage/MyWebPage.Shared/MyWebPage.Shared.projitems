@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>6279c845-92f8-4333-ab99-3d213163593c</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>MyWebPage.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Classes\GameOfLifeController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\GameofLifePage.xaml.cs">
+      <DependentUpon>$fileinputname$.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\HomePage.xaml.cs">
+      <DependentUpon>$fileinputname$.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\MachineLearningPage.xaml.cs">
+      <DependentUpon>$fileinputname$.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\ScienceProjectsPage.xaml.cs">
+      <DependentUpon>$fileinputname$.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\XamarinAppsPage.xaml.cs">
+      <DependentUpon>$fileinputname$.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\GameofLifePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\HomePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\MachineLearningPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\ScienceProjectsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)Pages\XamarinAppsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\1024px-Python-logo-notext.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\31b2ii8hchi31.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Adnotacja 2019-09-09 143334.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Adnotacja 2019-09-09 143753.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Adnotacja 2019-09-09 143843.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\cslogo.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Example-images-from-the-MNIST-dataset.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\matlab508049273.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\prezentacja1.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\prezentacja2.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\prezentacja3.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\prezentacja4.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\SplashScreen.scale-200.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\StockPPrediction_with_SVR.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\StoreLogo.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\VisualStudio2x2.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Webpage_Background.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Wide310x150Logo.scale-200.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\xamarin-logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="$(MSBuildThisFileDirectory)Strings\en\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="C:\Users\Tymon\source\repos\MyWebPage\MyWebPage\MyWebPage.Shared\Pages\GameofLifePage.xaml.cs">
+      <DependentUpon>GameofLifePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="C:\Users\Tymon\source\repos\MyWebPage\MyWebPage\MyWebPage.Shared\Pages\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="C:\Users\Tymon\source\repos\MyWebPage\MyWebPage\MyWebPage.Shared\Pages\MachineLearningPage.xaml.cs">
+      <DependentUpon>MachineLearningPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="C:\Users\Tymon\source\repos\MyWebPage\MyWebPage\MyWebPage.Shared\Pages\MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="C:\Users\Tymon\source\repos\MyWebPage\MyWebPage\MyWebPage.Shared\Pages\ScienceProjectsPage.xaml.cs">
+      <DependentUpon>ScienceProjectsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="C:\Users\Tymon\source\repos\MyWebPage\MyWebPage\MyWebPage.Shared\Pages\UrhoGamePage.xaml.cs">
+      <DependentUpon>UrhoGamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="C:\Users\Tymon\source\repos\MyWebPage\MyWebPage\MyWebPage.Shared\Pages\XamarinAppsPage.xaml.cs">
+      <DependentUpon>XamarinAppsPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Classes\" />
+  </ItemGroup>
+</Project>
