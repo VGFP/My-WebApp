@@ -16,7 +16,7 @@
                         <Grid>
                             <Rectangle Fill="AntiqueWhite" Height="700" Width="Auto" RadiusX="40" RadiusY="40"/>
                             <StackPanel>
-                                <TextBlock Margin="20" FontSize="20" HorizontalAlignment="Center"><Run>Name: Filip Przychodni</Run><LineBreak></LineBreak><Span><Run>Status: Student</Run><LineBreak></LineBreak><Run>Field of study: Acoustic Engineering</Run><LineBreak></LineBreak><Run>Contact: filippcontact@interia.pl</Run><LineBreak></LineBreak><Run>Github:</Run><Hyperlink NavigateUri="https://github.com/VGFP">https://github.com/VGFP</Hyperlink></Span></TextBlock>
+                                <TextBlock Margin="20" FontSize="20" HorizontalAlignment="Center"><Run>Name: Filip Przychodni</Run><LineBreak></LineBreak><Span><Run>Status: Student</Run><LineBreak></LineBreak><Run>Field of study: Acoustic Engineering</Run><LineBreak></LineBreak><Run>Contact: filip.pcontact@interia.pl</Run><LineBreak></LineBreak><Run>Github:</Run><Hyperlink NavigateUri="https://github.com/VGFP">https://github.com/VGFP</Hyperlink></Span></TextBlock>
                                 <TextBlock FontSize="20" HorizontalAlignment="Center" Text="Technologies:"/>
                                 <TextBlock Text=""/>
 
