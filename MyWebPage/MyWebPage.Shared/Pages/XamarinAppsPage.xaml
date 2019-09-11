@@ -26,7 +26,7 @@
 	                        BorderBrush="LightBlue"
                                     Padding="5">
                                 <StackPanel>
-                                    <Image Source="Assets/SaveImagesXamarin.png" Stretch="Uniform" Height="750" Width="750"/>
+                                    <Image Source="Assets/SaveImagesXamarin.png" Stretch="Uniform" Height="650" Width="700"/>
                                 </StackPanel>
                             </Border>
                             <TextBlock TextWrapping="Wrap" Text="Saved binary file takes few kB more then PNG oryginal (Original: 252 kB, Saved: 332 kB) but can be used in multiple platforms by the same source code."/>
