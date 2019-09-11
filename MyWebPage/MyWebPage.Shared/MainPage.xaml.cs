@@ -63,7 +63,7 @@ namespace MyWebPage
         }
         private async void showMessage()
         {
-            var messageDialog = new MessageDialog("Due to the fact that this site is an application written in C# and XAML and then converted to WebAssembly page is mostly not fluid. It is recomended to open this website in Google Chrome and on large widescreen monitor.");
+            var messageDialog = new MessageDialog("Due to the fact that this site is an application written in C# and XAML and then converted to WebAssembly, it is not as well optimized as a website written in JavaScript and HTML. It is recomended to open this website in Google Chrome and on large widescreen monitor.");
             await messageDialog.ShowAsync();
         }
     }
