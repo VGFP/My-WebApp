@@ -24,7 +24,7 @@
                         <StackPanel Margin="20">
                             <TextBlock TextWrapping="Wrap"><Run>Pełna nazwa projekt: </Run><LineBreak></LineBreak><Bold>
                                 Zastosowanie dźwięku 3D oraz infromacji zwrotnej o stanie psychofizycznym człowieka na podstawie analizy sygnałow akustycznych</Bold><LineBreak></LineBreak></TextBlock>
-                            <TextBlock TextWrapping="Wrap" Text="Jako członek koła naukowego KNIA (Koło Naukowe Inżynierii Akustycznej brałem czynny udział w wyżekj wymienionym projekcie. Celem było stworzenie programu VR który modyfikuje zachowanie na podstawie analizy oddechu użytkownika. Algorytm analizy oddechy był napisany w Matlabie, 
+                            <TextBlock TextWrapping="Wrap" Text="Jako członek koła naukowego KNIA (Koło Naukowe Inżynierii Akustycznej brałem czynny udział w wyżej wymienionym projekcie. Celem było stworzenie programu VR który modyfikuje zachowanie na podstawie analizy oddechu użytkownika. Algorytm analizy oddechu był napisany w Matlabie, 
                                        wykorzystywał on VAD (ang. Voice Activity Detection) oraz MFCC (ang. Mel-frequency Cepstrum Coefficients) 
                                        by oceniać czy mikrofon zarejestrował wdech czy wydech."/>
                             <TextBlock TextWrapping="Wrap">

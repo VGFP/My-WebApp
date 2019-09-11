@@ -63,7 +63,7 @@ namespace MyWebPage
         }
         private async void showMessage()
         {
-            var messageDialog = new MessageDialog("It is recomended to open this website in Google Chrome and on large widescreen monitor. This website is using WebAssembly more infotmation on Main Page -> About this page. Close this message to continue.");
+            var messageDialog = new MessageDialog("It is recomended to open this website in Google Chrome and on large widescreen monitor. This website is using WebAssembly more information on Main Page -> About this page. Close this message to continue.");
             await messageDialog.ShowAsync();
         }
     }
