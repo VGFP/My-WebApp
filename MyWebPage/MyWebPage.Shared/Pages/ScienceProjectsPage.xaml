@@ -32,8 +32,7 @@
                             <Run>Projekt wykorzystywał też zaawansowany silnik dźwięku 3D Steam Audio w celu badań nad wpływem zdarzeń akustycznych na stan psychofizyczny człowieka</Run></TextBlock>
                             <TextBlock TextWrapping="Wrap"><LineBreak></LineBreak><Bold>OSKA 2019</Bold><LineBreak></LineBreak><Run>
                                 W dniack 7-9 marca 2019 w Kielcach odbyła się 6. Ogólnopolska Studencka Konferencja Akustyków OSKA 2019 podczas której 
-                                zaprezentowałem wraz z jednym ze współtworzących nasz projekt.</Run><LineBreak></LineBreak><Run> Link do wystąpiena: </Run>
-                                
+                                zaprezentowałem wraz z jednym ze współtworzących nasz projekt.</Run><LineBreak></LineBreak><Run> Link do wystąpiena: </Run>                               
                                 <Hyperlink NavigateUri="https://youtu.be/JuACjOMs3U4?t=19668">https://youtu.be/JuACjOMs3U4?t=19668</Hyperlink><LineBreak></LineBreak></TextBlock>
                             <TextBlock TextWrapping="Wrap" Text="Kilka slajdów z prezentacji na OSKA 2019:"/>
                             <Image Source="Assets/prezentacja1.png" Stretch="Uniform"/>

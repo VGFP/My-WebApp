@@ -50,7 +50,8 @@
 	                        CornerRadius="10"
 	                        Padding="5">
                         <StackPanel Margin="20">
-                            <TextBlock Text="Game of life I made as UWP app. The same app is on this website but it works slower then native. More information on Game of Life page" FontSize="24" TextWrapping="Wrap"/>
+                            <TextBlock Text="Game of life I made as UWP app. The same app is on this website but it works slower then native. More information on Game of Life page" TextWrapping="Wrap"/>
+                            <TextBlock/>
                             <Border HorizontalAlignment="Stretch"
 	                        BorderThickness="5"
 	                        BorderBrush="LightBlue"	                        
@@ -75,8 +76,8 @@
 	                        CornerRadius="10"
 	                        Padding="5">
                         <StackPanel Margin="20" Width="750">
-                            <TextBlock Text="This entire website is written in C# and XAML. Thanks to the WebAssembly and Uno Platform it is possible to run C# code in browser. More information in Main Page." FontSize="24" TextWrapping="Wrap"/>
-                            <TextBlock FontSize="24">
+                            <TextBlock Text="This entire website is written in C# and XAML. Thanks to the WebAssembly and Uno Platform it is possible to run C# code in browser. More information in Main Page -> About this web page." TextWrapping="Wrap"/>
+                            <TextBlock>
                             <Span xml:space="preserve"><Run>Uno Platform website: </Run><Hyperlink NavigateUri="https://platform.uno/">https://platform.uno/</Hyperlink></Span>
                             </TextBlock>
                             <TextBlock Text=""/>
