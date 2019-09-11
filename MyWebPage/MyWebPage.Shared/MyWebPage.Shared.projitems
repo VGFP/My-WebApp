@@ -77,7 +77,7 @@
     <Content Include="$(MSBuildThisFileDirectory)Assets\prezentacja3.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\prezentacja4.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\SaveImagesXamarin.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Assets\SplashScreen.scale-200.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\splashscreen.scale-200.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Square150x150Logo.scale-200.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Square44x44Logo.scale-200.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />

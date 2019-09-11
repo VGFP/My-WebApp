@@ -26,9 +26,9 @@ namespace MyWebPage
     {
         public MainPage()
         {
-            this.InitializeComponent();
-            showMessage();
+            this.InitializeComponent();            
             ContentFrame.Navigate(typeof(HomePage));
+            showMessage();
         }
         private void NavView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
         {
@@ -63,7 +63,7 @@ namespace MyWebPage
         }
         private async void showMessage()
         {
-            var messageDialog = new MessageDialog("Due to the fact that this site is an application written in C# and XAML and then converted to WebAssembly, it is not as well optimized as a website written in JavaScript and HTML. It is recomended to open this website in Google Chrome and on large widescreen monitor.");
+            var messageDialog = new MessageDialog("It is recomended to open this website in Google Chrome and on large widescreen monitor. This website is using WebAssembly more infotmation on Main Page -> About this page. Close this message to continue.");
             await messageDialog.ShowAsync();
         }
     }
