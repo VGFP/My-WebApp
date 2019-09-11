@@ -19,17 +19,17 @@
 	                        Padding="5">
                         <StackPanel Margin="20">
                             <TextBlock TextWrapping="Wrap"
-                                       Text="Simple multiplatform app that loads and saves images in device memory as json files. I made this app to have a quick look how to do it in other projects"/>
-                            <Border HorizontalAlignment="Stretch"
+                                       Text="Simple multiplatform app that loads and saves images in device memory as json files. I made this app to have a quick look how to do it in other projects."/>
+                            <TextBlock Text=""/>
+                            <Border HorizontalAlignment="Center"
 	                        BorderThickness="5"
-	                        BorderBrush="LightBlue"	                        
-	                        Padding="5">
+	                        BorderBrush="LightBlue"
+                                    Padding="5">
                                 <StackPanel>
-                                    <Image Source="Assets/Adnotacja 2019-09-09 143753.png" Stretch="Uniform" Height="800" Width="800"/>
-                                    <Image Source="Assets/Adnotacja 2019-09-09 143843.png" Stretch="Uniform" Height="800" Width="800"/>
+                                    <Image Source="Assets/SaveImagesXamarin.png" Stretch="Uniform" Height="750" Width="750"/>
                                 </StackPanel>
                             </Border>
-                            <TextBlock TextWrapping="Wrap" Text="Saved binary file takes few kB more then PNG oryginal but can be used in multiple platforms (Original: 38 kB, Saved: 41 kB)."/>
+                            <TextBlock TextWrapping="Wrap" Text="Saved binary file takes few kB more then PNG oryginal (Original: 252 kB, Saved: 332 kB) but can be used in multiple platforms by the same source code."/>
                             <TextBlock TextWrapping="Wrap" Text="I only have been able to test it on UWP but all libraries are crossplatform so there shoudn't be a problem to use it on Android or iOS"/>
                             <TextBlock TextWrapping="Wrap"><Run>Github Link: </Run><Hyperlink NavigateUri="https://github.com/VGFP/SaveBinaryFilesInXamarin">https://github.com/VGFP/SaveBinaryFilesInXamarin</Hyperlink></TextBlock>
                             <TextBlock TextWrapping="WrapWholeWords">
@@ -75,7 +75,7 @@
 	                        CornerRadius="10"
 	                        Padding="5">
                         <StackPanel Margin="20" Width="750">
-                            <TextBlock Text="This entire website is written in C# and XAML. Thanks to the WebAssembly and Uno Platform it is possible to run C# code in browser. More information in Home Page." FontSize="24" TextWrapping="Wrap"/>
+                            <TextBlock Text="This entire website is written in C# and XAML. Thanks to the WebAssembly and Uno Platform it is possible to run C# code in browser. More information in Main Page." FontSize="24" TextWrapping="Wrap"/>
                             <TextBlock FontSize="24">
                             <Span xml:space="preserve"><Run>Uno Platform website: </Run><Hyperlink NavigateUri="https://platform.uno/">https://platform.uno/</Hyperlink></Span>
                             </TextBlock>

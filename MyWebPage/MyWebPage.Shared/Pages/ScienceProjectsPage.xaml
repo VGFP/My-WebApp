@@ -35,7 +35,7 @@
                                 zaprezentowałem wraz z jednym ze współtworzących nasz projekt.</Run><LineBreak></LineBreak><Run> Link do wystąpiena: </Run>
                                 
                                 <Hyperlink NavigateUri="https://youtu.be/JuACjOMs3U4?t=19668">https://youtu.be/JuACjOMs3U4?t=19668</Hyperlink><LineBreak></LineBreak></TextBlock>
-                            <TextBlock TextWrapping="Wrap" Text="Kilka slajdów z prezentacji na OSKA 2019 (Ogólnopolska Studencka Konferencja Akustyków):"/>
+                            <TextBlock TextWrapping="Wrap" Text="Kilka slajdów z prezentacji na OSKA 2019:"/>
                             <Image Source="Assets/prezentacja1.png" Stretch="Uniform"/>
                             <Image Source="Assets/prezentacja2.png" Stretch="Uniform"/>
                             <Image Source="Assets/prezentacja3.png" Stretch="Uniform"/>

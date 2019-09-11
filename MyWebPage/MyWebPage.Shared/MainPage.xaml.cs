@@ -6,6 +6,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -26,6 +27,7 @@ namespace MyWebPage
         public MainPage()
         {
             this.InitializeComponent();
+            showMessage();
             ContentFrame.Navigate(typeof(HomePage));
         }
         private void NavView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
@@ -58,6 +60,11 @@ namespace MyWebPage
                 }
                
             }
+        }
+        private async void showMessage()
+        {
+            var messageDialog = new MessageDialog("Due to the fact that this site is an application written in C# and XAML and then converted to WebAssembly page is mostly not fluid. It is recomended to open this website in Google Chrome and on large widescreen monitor.");
+            await messageDialog.ShowAsync();
         }
     }
 }

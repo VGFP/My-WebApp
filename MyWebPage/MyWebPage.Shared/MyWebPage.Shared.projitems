@@ -68,8 +68,6 @@
     <Content Include="$(MSBuildThisFileDirectory)Assets\1024px-Python-logo-notext.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\31b2ii8hchi31.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Adnotacja 2019-09-09 143334.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Assets\Adnotacja 2019-09-09 143753.png" />
-    <Content Include="$(MSBuildThisFileDirectory)Assets\Adnotacja 2019-09-09 143843.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\cslogo.jpg" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Example-images-from-the-MNIST-dataset.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\LockScreenLogo.scale-200.png" />
@@ -78,6 +76,7 @@
     <Content Include="$(MSBuildThisFileDirectory)Assets\prezentacja2.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\prezentacja3.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\prezentacja4.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\SaveImagesXamarin.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\SplashScreen.scale-200.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Square150x150Logo.scale-200.png" />
     <Content Include="$(MSBuildThisFileDirectory)Assets\Square44x44Logo.scale-200.png" />
