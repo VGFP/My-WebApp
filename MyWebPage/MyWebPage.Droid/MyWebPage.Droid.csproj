@@ -59,16 +59,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Uno.Core">
+      <Version>1.29.0-dev.93</Version>
+    </PackageReference>
     <PackageReference Include="Uno.SourceGenerationTasks">
       <Version>1.32.0-dev.297</Version>
     </PackageReference>
     <PackageReference Include="Uno.UI" Version="1.46.228-dev.2681" />
     <PackageReference Include="Uno.UniversalImageLoader" Version="1.9.32" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Filter" Version="1.1.2" />
-    <PackageReference Include="UrhoSharp">
-      <Version>1.9.67</Version>
-    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="1.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Filter" Version="1.1.1" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
